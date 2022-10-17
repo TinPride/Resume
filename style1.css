@@ -1,0 +1,260 @@
+*{
+    list-style: none;
+}
+
+body{
+    background-color: #19191B;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 2% 0;
+
+    
+}
+/* NAVBAR START */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__logo{
+    width: 5%;
+}
+
+.navbar__list{
+    display: flex;
+    list-style-type: none;
+    width: 30%;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+    font-size: 14px;
+}
+
+.list__item > a{
+text-decoration: none;
+color: white;
+transition: 0.8s;
+}
+.list__item > a:hover{
+    color: #5454d4;
+    transition: 0.8s;
+}
+
+
+
+
+
+/* NAVBAR END */
+
+
+/* HEADER START */
+.header__block_start{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: yellow;
+    height: 150px;
+    font-size: 30px;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    background-color: rgb(48, 28, 28);
+    height: 65%;
+    color: #fff;
+}
+
+.header__block_left{
+    width: 40%;
+    margin-left: 50px;
+    padding: 40px;
+}
+
+.header__title_left{
+    font-size: 100px;
+    flex-wrap: wrap;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.header__desc_left{
+    font-size: 21px;
+    line-height: 2;
+}
+.header__block_right{
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* HEADER END */
+
+/* SERVICES START */
+
+.services{
+    justify-content: center;
+    width: 100%;
+    height: 610px;
+    background: url(./img/skills-finale.jpg);
+    background-size: cover;
+}
+
+.skills{
+    text-align: center;
+    align-items: center;
+    background: #333;
+    text-transform: uppercase;
+    width: 450px;
+    margin-left: 30%;
+    color: #fff;
+    padding: 30px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.title__skills{
+    text-align: center;
+}
+
+.skills li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 7, 7, 0.25)0%, rgba(37, 52, 164, 0.25)100%)
+}
+
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+.css{
+    width: 70%;
+    animation: css 3s;
+}
+.adaptive{
+    width: 45%;
+    animation: adaptive 3s;
+}
+.animation{
+    width: 40%;
+    animation: animation 3s;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(204, 46, 240, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(156, 67, 67, 0.12), 0 10px 10px rgba(194, 22, 224, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+
+/* SERVICES END */
+hr{
+    background-color: #dadaeb;
+}
+/* FOOTER START */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.footer_span{
+    
+}
+.footer_logo{
+    width: 100px;
+    height: 50px;
+}
+.links_logo{
+    margin: 5;
+    width: 100px;
+    height: 50px;
+}
+
+/* FOOTER END */
+
+/* burger menu styles start */
+.burger-menu{
+    display: none;
+    width: 98%;
+    background-color: #19191B;
+    position: absolute;
+    z-index: 1;
+    right: 1%;
+    left: 1%;
+    top: 1%;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.burger-menu__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-menu__btn_close{
+    width: 2%;
+    height: 2%;
+    margin: 1.5% 0;
+    cursor: pointer;
+}
+
+.burger-menu__input{
+    width: 15%;
+    height: 16px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+}
+
+.burger-menu__list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.burger-menu__item > a {
+    text-decoration: none;
+    color: white;
+    transition: 0.8s;
+}
+
+.burger-menu__item > a:hover {
+    color: #5454d4;
+    transition: 0.8s;
+}
+
+/* burger menu styles end */
